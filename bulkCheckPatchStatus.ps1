@@ -88,6 +88,7 @@ $DEV = ""
 $PROD = ""
 
 foreach($server in $serverList){
+	$errorMessage = ""
 	$i++
 	Write-Progress -id 1 -activity "Generating report for: $server `($i of $($serverList.count)`)" -percentComplete ($i / $serverList.Count*100)
 
